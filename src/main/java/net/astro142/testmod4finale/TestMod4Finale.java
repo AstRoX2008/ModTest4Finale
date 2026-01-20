@@ -1,5 +1,6 @@
 package net.astro142.testmod4finale;
 
+import net.astro142.testmod4finale.block.ModBlocks;
 import net.astro142.testmod4finale.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,7 @@ public class TestMod4Finale {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -61,6 +63,9 @@ public class TestMod4Finale {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLACKPOWDER);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ARTFUL_CUBE);
         }
     }
 
