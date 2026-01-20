@@ -12,26 +12,27 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import javax.naming.ldap.PagedResultsControl;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod4Finale.MOD_ID);
 
     public static final DeferredBlock<Block> ARTFUL_CUBE = registerBlock("artful_cube",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).sound(SoundType.ANVIL).lightLevel(value -> 10)
-            ));
+            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANVIL));
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
-        DeferredBlock<T> toReturn = BLOCKS.register(name,block);
-        registerBlockItem(name,toReturn);
-        return toReturn;
+
+
+    private static <B extends Block> DeferredBlock<B> registerBlock(String name, Function<BlockBehaviour.Properties, ? extends B> blockFactory, BlockBehaviour.Properties blockProperties) {
+        DeferredBlock<B> block = BLOCKS.registerBlock(name, blockFactory, blockProperties);
+        registerBlockItem(name, block);
+        return block;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    private static <B extends Block> void registerBlockItem(String name, DeferredBlock<B> block) {
+        ModItems.ITEMS.registerSimpleBlockItem(name, block);
     }
-
-    public  static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
 }
