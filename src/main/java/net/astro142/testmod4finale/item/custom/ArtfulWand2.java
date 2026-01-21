@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 public class ArtfulWand2 extends Item {
 
@@ -20,18 +21,22 @@ public class ArtfulWand2 extends Item {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
+
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-        if(clickedBlock != ModBlocks.ARTFUL_CUBE.get().defaultBlockState().getBlock()){
+
             if(!level.isClientSide()) {
-                level.setBlockAndUpdate(context.getClickedPos(), ModBlocks.ARTFUL_CUBE.get().defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,1,0), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,1,1), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,1,-1), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,2,0), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,2,1), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(0,2,-1), Blocks.WHITE_CONCRETE.defaultBlockState());
 
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-                level.playSound(null, context.getClickedPos(), SoundEvents.ALLAY_DEATH, SoundSource.BLOCKS);
+                level.playSound(null, context.getClickedPos().offset(0,1,0), SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS);
             }
-        }
-
 
         return InteractionResult.SUCCESS;
     }
