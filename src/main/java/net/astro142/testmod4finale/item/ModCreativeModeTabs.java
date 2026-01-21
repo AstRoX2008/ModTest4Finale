@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModBlocks.ARTFUL_CUBE);
+                        output.accept(ModItems.ARTFUL_WAND);
                     }).build());
 
     public static void register(IEventBus eventBus) {

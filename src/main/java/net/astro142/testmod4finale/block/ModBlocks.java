@@ -19,7 +19,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod4Finale.MOD_ID);
 
     public static final DeferredBlock<Block> ARTFUL_CUBE = registerBlock("artful_cube",
-            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANVIL));
+            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO));
 
 
 

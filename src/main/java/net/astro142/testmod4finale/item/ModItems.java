@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> BLACKPOWDER = ITEMS.registerItem("blackpowder",
             Item::new, new Item.Properties());
 
+    public static final DeferredItem<Item> ARTFUL_WAND = ITEMS.registerItem("artful_wand",
+            Item::new, new Item.Properties());
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

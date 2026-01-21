@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "artful",
+  "ingredient": "testmod4finale:artful_cube",
+  "result": {
+    "count": 1,
+    "id": "testmod4finale:artful_wand"
+  }
+}
