@@ -1,6 +1,7 @@
 package net.astro142.testmod4finale.block;
 
 import net.astro142.testmod4finale.TestMod4Finale;
+import net.astro142.testmod4finale.block.custom.ArtfulCube;
 import net.astro142.testmod4finale.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -19,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod4Finale.MOD_ID);
 
     public static final DeferredBlock<Block> ARTFUL_CUBE = registerBlock("artful_cube",
-            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO));
+            (properties) -> new ArtfulCube(properties),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO));
 
 
 
