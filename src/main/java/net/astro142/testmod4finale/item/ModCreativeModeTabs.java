@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModBlocks.ARTFUL_CUBE);
                         output.accept(ModItems.ARTFUL_WAND);
+                        output.accept(ModItems.PIZZA);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -2,5 +2,8 @@
   "item.testmod4finale.blackpowder": "Blackpowder",
   "item.testmod4finale.artful_wand": "Artful's wand",
   "block.testmod4finale.artful_cube": "Artful Cube",
-  "creativetab.testmod4finale.gnb_stuff": "GNB Stuff"
+  "creativetab.testmod4finale.gnb_stuff": "GNB Stuff",
+  "item.testmod4finale.pizza": "Pizza",
+  "tooltip.testmod4finale.blackpowder.tooltip": "Careful! It's explosive.",
+  "tooltip.testmod4finale.artful_wand.tooltip": "Spawns a white wall just like the real Artful."
 }
