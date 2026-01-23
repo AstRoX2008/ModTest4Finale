@@ -2,7 +2,6 @@ package net.astro142.testmod4finale.item;
 
 import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.item.custom.ArtfulWand;
-import net.astro142.testmod4finale.item.custom.ArtfulWand2;
 import net.astro142.testmod4finale.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -29,7 +28,7 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> ARTFUL_WAND = ITEMS.registerItem("artful_wand",
-            ArtfulWand2::new, new Item.Properties().durability(32)
+            ArtfulWand::new, new Item.Properties().durability(32)
     );
 
     public static final DeferredItem<Item> PIZZA = ITEMS.registerItem("pizza",
