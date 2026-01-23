@@ -2,6 +2,7 @@ package net.astro142.testmod4finale.item.custom;
 
 import com.mojang.logging.LogUtils;
 import com.sun.tools.jconsole.JConsoleContext;
+import net.minecraft.core.Vec3i;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -16,6 +17,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.spongepowered.asm.logging.ILogger;
@@ -35,22 +37,19 @@ public class ArtfulWand2 extends Item {
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
             if(!level.isClientSide()) {
                 final int xe = context.getHorizontalDirection().getStepX();
-                final int ye = context.getHorizontalDirection().getStepY();
-                final int ze = context.getHorizontalDirection().getStepZ();
                 final int xee = context.getClickedFace().getStepX();
                 final int yee = context.getClickedFace().getStepY();
                 final int zee = context.getClickedFace().getStepZ();
-                final int xoff = context.getClickedFace().getStepX();
-                final int yoff = context.getClickedFace().getStepY();
-                final int zoff = context.getClickedFace().getStepZ();
-                LOGGER.info("X:{},Y:{},Z:{}", xe, ye, ze);
-                LOGGER.info("Xe:{},Ye:{},Ze:{}", xee, yee, zee);
-//                level.setBlockAndUpdate(context.getClickedPos().offset(0,1,0), Blocks.WHITE_CONCRETE.defaultBlockState());
-//                level.setBlockAndUpdate(context.getClickedPos().offset(xoff,1,0), Blocks.WHITE_CONCRETE.defaultBlockState());
-//                level.setBlockAndUpdate(context.getClickedPos().offset(-xoff,1,0), Blocks.WHITE_CONCRETE.defaultBlockState());
-//                level.setBlockAndUpdate(context.getClickedPos().offset(0,2,0), Blocks.WHITE_CONCRETE.defaultBlockState());
-//                level.setBlockAndUpdate(context.getClickedPos().offset(xoff,2,0), Blocks.WHITE_CONCRETE.defaultBlockState());
-//                level.setBlockAndUpdate(context.getClickedPos().offset(-xoff,2,0), Blocks.WHITE_CONCRETE.defaultBlockState());
+                Vec3i newoff = new Vec3i(xee,yee,zee);
+                int addx = 1; int addz = 1;
+                if(xe != 0){addx = 0;}else{addz = 0;}
+                LOGGER.info("X{}",xe);
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()+addx,newoff.getY(),newoff.getZ()+addz), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()-addx,newoff.getY(),newoff.getZ()-addz), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX(),newoff.getY()+1,newoff.getZ()), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()+addx,newoff.getY()+1,newoff.getZ()+addz), Blocks.WHITE_CONCRETE.defaultBlockState());
+                level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()-addx,newoff.getY()+1,newoff.getZ()-addz), Blocks.WHITE_CONCRETE.defaultBlockState());
 
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
