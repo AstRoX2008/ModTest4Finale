@@ -2,6 +2,7 @@ package net.astro142.testmod4finale.item.custom;
 
 import com.mojang.logging.LogUtils;
 import net.astro142.testmod4finale.Utils.ModTags;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -35,10 +36,6 @@ public class ArtfulWand extends Item {
     public @NotNull InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-        Block wallBlock = Blocks.WHITE_CONCRETE;
-        if(level.getBlockState(context.getClickedPos()).is(ModTags.Blocks.SPECIAL_WALL_BLOCKS)){
-            wallBlock = Blocks.QUARTZ_BLOCK;
-        }
 
             if(!level.isClientSide()) {
                 final int xe = context.getHorizontalDirection().getStepX();
@@ -48,7 +45,12 @@ public class ArtfulWand extends Item {
                 Vec3i newoff = new Vec3i(xee,yee,zee);
                 int addx = 1; int addz = 1;
                 if(xe != 0){addx = 0;}else{addz = 0;}
-                LOGGER.info("X{}",xe);
+                Block wallBlock = Blocks.WHITE_CONCRETE;
+                if(yee != 0 && level.getBlockState(context.getClickedPos()).is(ModTags.Blocks.SPECIAL_WALL_BLOCKS)){
+                    wallBlock = Blocks.QUARTZ_BLOCK;
+                }else if (yee == 0 && level.getBlockState(context.getClickedPos().offset(newoff.getX(),newoff.getY()-1,newoff.getZ())).is(ModTags.Blocks.SPECIAL_WALL_BLOCKS)){
+                    wallBlock = Blocks.QUARTZ_BLOCK;
+                    }
                 level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), wallBlock.defaultBlockState());
                 level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()+addx,newoff.getY(),newoff.getZ()+addz), wallBlock.defaultBlockState());
                 level.setBlockAndUpdate(context.getClickedPos().offset(newoff.getX()-addx,newoff.getY(),newoff.getZ()-addz), wallBlock.defaultBlockState());
