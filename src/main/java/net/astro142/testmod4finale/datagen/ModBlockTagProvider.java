@@ -26,5 +26,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.WARPED_NYLIUM)
                 .add(Blocks.CRIMSON_NYLIUM);
 
+        tag(BlockTags.FENCES).add(ModBlocks.ARTFUL_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ARTFUL_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.ARTFUL_WALL.get());
     }
 }

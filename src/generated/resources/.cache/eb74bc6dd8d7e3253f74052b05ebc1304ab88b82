@@ -1,2 +1,5 @@
-// 1.21.10	2026-01-27T12:55:16.9807523	Tags for minecraft:block mod id testmod4finale
+// 1.21.10	2026-01-27T23:43:31.4226241	Tags for minecraft:block mod id testmod4finale
+628edae91543c6573b3788f2c5b3a2358f471d6f data/minecraft/tags/block/fences.json
+ec90f6e311e0df889195ddf1fcf40b467cbc73a3 data/minecraft/tags/block/fence_gates.json
+4a681475d298cb3ab8d1f8d37ad04fc3324dfd55 data/minecraft/tags/block/walls.json
 7de61a4e8bf6099cf8dbda5ed7ffda226ff9b617 data/testmod4finale/tags/block/special_wall_blocks.json

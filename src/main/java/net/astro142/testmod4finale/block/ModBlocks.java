@@ -22,9 +22,6 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod4Finale.MOD_ID);
 
-    public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
-            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
-
     public static final DeferredBlock<Block> ARTFUL_CUBE = registerBlock("artful_cube",
             (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
     public static final DeferredBlock<StairBlock> ARTFUL_STAIRS = registerBlock("artful_stairs",
@@ -35,7 +32,7 @@ public class ModBlocks {
             (properties) -> new WallBlock(properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
 
     public static final DeferredBlock<FenceBlock> ARTFUL_FENCE = registerBlock("artful_fence",
-            (properties) -> new FenceBlock(properties.strength(1f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO)),FenceBlock.Properties.of());
+            (properties) -> new FenceBlock(properties.strength(1f).noLootTable().sound(SoundType.BAMBOO)),FenceBlock.Properties.of());
     public static final DeferredBlock<FenceGateBlock> ARTFUL_FENCE_GATE = registerBlock("artful_fence_gate",
             (properties) -> new FenceGateBlock(WoodType.ACACIA,properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
     public static final DeferredBlock<PressurePlateBlock> ARTFUL_PRESSURE_PLATE = registerBlock("artful_pressure_plate",
