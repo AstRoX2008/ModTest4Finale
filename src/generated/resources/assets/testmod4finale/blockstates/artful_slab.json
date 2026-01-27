@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "testmod4finale:block/artful_slab"
+    },
+    "type=double": {
+      "model": "testmod4finale:block/artful_cube"
+    },
+    "type=top": {
+      "model": "testmod4finale:block/artful_slab_top"
+    }
+  }
+}

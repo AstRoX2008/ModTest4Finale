@@ -59,6 +59,19 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(output, TO_ARTFUL_WAND, RecipeCategory.MISC, ModItems.ARTFUL_WAND.get(), 0.25f, 200, "artful_wand");
 
+        stairBuilder(ModBlocks.ARTFUL_STAIRS.get(), Ingredient.of(ModBlocks.ARTFUL_CUBE)).group("artful_cube")
+                .unlockedBy("has_artful_cube", has(ModBlocks.ARTFUL_CUBE)).save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ARTFUL_SLAB.get(), ModBlocks.ARTFUL_CUBE.get());
+
+        buttonBuilder(ModBlocks.ARTFUL_BUTTON.get(), Ingredient.of(ModBlocks.ARTFUL_CUBE.get())).group("artful_cube")
+                .unlockedBy("has_artful_cube", has(ModBlocks.ARTFUL_CUBE.get())).save(output);
+        pressurePlate(ModBlocks.ARTFUL_PRESSURE_PLATE.get(), ModBlocks.ARTFUL_CUBE.get());
+
+        fenceBuilder(ModBlocks.ARTFUL_FENCE.get(), Ingredient.of(ModBlocks.ARTFUL_CUBE.get())).group("artful_cube")
+                .unlockedBy("has_artful_cube", has(ModBlocks.ARTFUL_CUBE.get())).save(output);
+        fenceGateBuilder(ModBlocks.ARTFUL_FENCE_GATE.get(), Ingredient.of(ModBlocks.ARTFUL_CUBE.get())).group("artful_cube")
+                .unlockedBy("has_artful_cube", has(ModBlocks.ARTFUL_CUBE.get())).save(output);
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ARTFUL_WALL.get(), ModBlocks.ARTFUL_CUBE.get());
     }
 
     protected void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

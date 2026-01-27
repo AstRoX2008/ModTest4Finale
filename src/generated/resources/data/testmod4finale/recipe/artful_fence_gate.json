@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "artful_cube",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "testmod4finale:artful_cube"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod4finale:artful_fence_gate"
+  }
+}

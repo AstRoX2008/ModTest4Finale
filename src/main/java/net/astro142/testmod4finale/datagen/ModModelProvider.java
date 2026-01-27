@@ -36,8 +36,14 @@ public class ModModelProvider extends ModelProvider {
 
         /* BLOCKS */
 
-        blockModels.createTrivialCube(ModBlocks.ARTFUL_CUBE.get());
-
+        blockModels.family(ModBlocks.ARTFUL_CUBE.get())
+                .fence(ModBlocks.ARTFUL_FENCE.get())
+                .fenceGate(ModBlocks.ARTFUL_FENCE_GATE.get())
+                .wall(ModBlocks.ARTFUL_WALL.get())
+                .stairs(ModBlocks.ARTFUL_STAIRS.get())
+                .slab(ModBlocks.ARTFUL_SLAB.get())
+                .button(ModBlocks.ARTFUL_BUTTON.get())
+                .pressurePlate(ModBlocks.ARTFUL_PRESSURE_PLATE.get());
 
     }
 

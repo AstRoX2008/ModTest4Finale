@@ -22,6 +22,14 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModBlocks.ARTFUL_CUBE);
+                        output.accept(ModBlocks.ARTFUL_STAIRS);
+                        output.accept(ModBlocks.ARTFUL_FENCE);
+                        output.accept(ModBlocks.ARTFUL_SLAB);
+                        output.accept(ModBlocks.ARTFUL_FENCE_GATE);
+                        output.accept(ModBlocks.ARTFUL_PRESSURE_PLATE);
+                        output.accept(ModBlocks.ARTFUL_BUTTON);
+                        output.accept(ModBlocks.ARTFUL_WALL);
+
                         output.accept(ModItems.ARTFUL_WAND);
                         output.accept(ModItems.PIZZA);
                     }).build());

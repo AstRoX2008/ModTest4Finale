@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "artful_cube",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "testmod4finale:artful_cube"
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": 3,
+    "id": "testmod4finale:artful_fence"
+  }
+}
