@@ -3,6 +3,7 @@ package net.astro142.testmod4finale.datagen;
 
 import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.block.ModBlocks;
+import net.astro142.testmod4finale.block.custom.ArtfulMusicBox;
 import net.astro142.testmod4finale.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -44,6 +45,12 @@ public class ModModelProvider extends ModelProvider {
                 .slab(ModBlocks.ARTFUL_SLAB.get())
                 .button(ModBlocks.ARTFUL_BUTTON.get())
                 .pressurePlate(ModBlocks.ARTFUL_PRESSURE_PLATE.get());
+
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(ModBlocks.ARTFUL_MUSIC_BOX.get())
+                        .with(BlockModelGenerators.createBooleanModelDispatch(ArtfulMusicBox.CLICKED,
+                                BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.ARTFUL_MUSIC_BOX.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
+                                BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.ARTFUL_MUSIC_BOX.get(), blockModels.modelOutput)))));
 
     }
 

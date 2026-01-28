@@ -42,7 +42,7 @@ public class ModBlocks {
             (properties) -> new ButtonBlock(BlockSetType.IRON,40,properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
 
     public static final DeferredBlock<Block> ARTFUL_MUSIC_BOX = registerBlock("artful_music_box",
-            (properties) -> new ArtfulMusicBox(properties),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO));
+            ArtfulMusicBox::new,BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO).lightLevel(state -> state.getValue(ArtfulMusicBox.CLICKED) ? 15 : 0));;
 
     private static <B extends Block> DeferredBlock<B> registerBlock(String name, Function<BlockBehaviour.Properties, ? extends B> blockFactory, BlockBehaviour.Properties blockProperties) {
         DeferredBlock<B> block = BLOCKS.registerBlock(name, blockFactory, blockProperties);

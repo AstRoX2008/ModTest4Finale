@@ -1,9 +1,10 @@
-// 1.21.10	2026-01-27T14:53:45.9093335	My Recipes
+// 1.21.10	2026-01-28T23:17:59.0594206	My Recipes
 529d5bbf11f3472f183d8864c60464fec9c3740e data/testmod4finale/advancement/recipes/building_blocks/artful_slab.json
 ed0bc33bdb920903df63f176134e9833a1dcb448 data/testmod4finale/advancement/recipes/building_blocks/artful_stairs.json
 ca4dd7b19409f607c8d77465ef36dfdf29ab6eb2 data/testmod4finale/advancement/recipes/building_blocks/artful_wall.json
 fb64524802da4ec7797125dadd4c3f0791635da8 data/testmod4finale/advancement/recipes/decorations/artful_fence.json
 6c6c86ae423e6642af7c568d40f6d0962f07d15a data/testmod4finale/advancement/recipes/misc/artful_cube.json
+6153298e3dde0510ce7742fb85d3e82bec62347c data/testmod4finale/advancement/recipes/misc/artful_music_box.json
 d96c7626d96eda6d86ff3cd4b58e3d07e8a26eaf data/testmod4finale/advancement/recipes/misc/artful_wand_from_smelting_artful_cube.json
 17ff54bd67af8850b10093908b5d31ee2b5ce010 data/testmod4finale/advancement/recipes/misc/blackpowder.json
 34fb60e8999b69d0b85c0646b3b7535964b44a25 data/testmod4finale/advancement/recipes/redstone/artful_button.json
@@ -13,6 +14,7 @@ cedd0be65d77b3287fc0651f8e239b9e94545b69 data/testmod4finale/advancement/recipes
 871ac645dc69e8f30075c06b3bfdfd6f1a1cb4ec data/testmod4finale/recipe/artful_cube.json
 3ad9dcbe34ed9cdd45c437cbec6025add94ecd5c data/testmod4finale/recipe/artful_fence.json
 135a33edbaac3f7be760b944634084b30b7e43ba data/testmod4finale/recipe/artful_fence_gate.json
+09e7c9c39d7b2e0c270262748dce9cf6b10bdbe6 data/testmod4finale/recipe/artful_music_box.json
 b6ca10f05cb5a46a6a632fa874df283b34638d60 data/testmod4finale/recipe/artful_pressure_plate.json
 0f595933ce714f2e96f022e2a355ff73850a4fbb data/testmod4finale/recipe/artful_slab.json
 dda6b6eb34c638b66797ae0a7ec432cb2d529d23 data/testmod4finale/recipe/artful_stairs.json

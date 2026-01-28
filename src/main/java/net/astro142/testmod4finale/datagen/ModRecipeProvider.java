@@ -12,6 +12,7 @@ import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -50,6 +51,16 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('W', ModItems.ARTFUL_WAND.get())
                 .define('X', Items.GUNPOWDER)
                 .unlockedBy("has_artful_wand", has(ModItems.ARTFUL_WAND)).save(output);
+
+        shaped(RecipeCategory.MISC, ModBlocks.ARTFUL_MUSIC_BOX.get())
+                .pattern("X#X")
+                .pattern("#W#")
+                .pattern("X#X")
+                .define('#', ModItems.BLACKPOWDER.get())
+                .define('W', Blocks.JUKEBOX)
+                .define('X', Items.WHITE_DYE)
+                .unlockedBy("has_blackpowder", has(ModItems.BLACKPOWDER)).save(output);
+
         shaped(RecipeCategory.MISC, ModItems.BLACKPOWDER.get())
                 .pattern("###")
                 .pattern("###")
