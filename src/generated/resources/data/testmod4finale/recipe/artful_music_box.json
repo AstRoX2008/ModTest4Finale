@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "testmod4finale:blackpowder",
+    "W": "minecraft:jukebox",
+    "X": "minecraft:white_dye"
+  },
+  "pattern": [
+    "X#X",
+    "#W#",
+    "X#X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod4finale:artful_music_box"
+  }
+}

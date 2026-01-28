@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "testmod4finale:block/artful_music_box"
+    },
+    "clicked=true": {
+      "model": "testmod4finale:block/artful_music_box_on"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blackpowder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testmod4finale:blackpowder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod4finale:artful_music_box"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blackpowder"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testmod4finale:artful_music_box"
+    ]
+  }
+}
