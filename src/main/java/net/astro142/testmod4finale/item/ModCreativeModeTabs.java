@@ -20,7 +20,6 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ARTFUL_CUBE.get()))
                     .title(Component.translatable("creativetab.testmod4finale.gnb_stuff"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModBlocks.ARTFUL_CUBE);
                         output.accept(ModBlocks.ARTFUL_STAIRS);
                         output.accept(ModBlocks.ARTFUL_FENCE);
@@ -30,8 +29,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ARTFUL_BUTTON);
                         output.accept(ModBlocks.ARTFUL_WALL);
 
+                        output.accept(ModBlocks.ARTFUL_MUSIC_BOX);
+
+                        output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModItems.ARTFUL_WAND);
                         output.accept(ModItems.PIZZA);
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
