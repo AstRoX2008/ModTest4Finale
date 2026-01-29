@@ -2,6 +2,7 @@ package net.astro142.testmod4finale.item.custom;
 
 import com.mojang.logging.LogUtils;
 import net.astro142.testmod4finale.Utils.ModTags;
+import net.astro142.testmod4finale.component.ModDataComponents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.network.chat.Component;
@@ -60,8 +61,8 @@ public class ArtfulWand extends Item {
 
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-
-                level.playSound(null, context.getClickedPos().offset(0,1,0), SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS);
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
+                level.playSound(null, context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS);
             }
 
         return InteractionResult.SUCCESS;
@@ -71,6 +72,9 @@ public class ArtfulWand extends Item {
     public void appendHoverText(ItemStack pStack, TooltipContext pContext, TooltipDisplay tooltipDisplay, Consumer<Component> components, TooltipFlag tooltipFlag) {
 
         components.accept(Component.translatable("tooltip.testmod4finale.artful_wand.tooltip"));
+        if(pStack.get(ModDataComponents.COORDINATES) != null) {
+            components.accept(Component.literal("Last wall summoned at " + pStack.get(ModDataComponents.COORDINATES)));
+        }
         super.appendHoverText(pStack, pContext, tooltipDisplay, components, tooltipFlag);
     }
 

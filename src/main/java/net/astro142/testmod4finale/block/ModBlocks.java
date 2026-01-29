@@ -24,13 +24,13 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod4Finale.MOD_ID);
 
     public static final DeferredBlock<Block> ARTFUL_CUBE = registerBlock("artful_cube",
-            (properties) -> new Block(properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
+            Block::new,BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
     public static final DeferredBlock<StairBlock> ARTFUL_STAIRS = registerBlock("artful_stairs",
             (properties) -> new StairBlock(ModBlocks.ARTFUL_CUBE.get().defaultBlockState(),properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
     public static final DeferredBlock<SlabBlock> ARTFUL_SLAB = registerBlock("artful_slab",
-            (properties) -> new SlabBlock(properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
+            SlabBlock::new,BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
     public static final DeferredBlock<WallBlock> ARTFUL_WALL = registerBlock("artful_wall",
-            (properties) -> new WallBlock(properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
+            WallBlock::new,BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
 
     public static final DeferredBlock<FenceBlock> ARTFUL_FENCE = registerBlock("artful_fence",
             (properties) -> new FenceBlock(properties.strength(1f).noLootTable().sound(SoundType.BAMBOO)),FenceBlock.Properties.of());
@@ -42,7 +42,7 @@ public class ModBlocks {
             (properties) -> new ButtonBlock(BlockSetType.IRON,40,properties),BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.BAMBOO));
 
     public static final DeferredBlock<Block> ARTFUL_MUSIC_BOX = registerBlock("artful_music_box",
-            ArtfulMusicBox::new,BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO).lightLevel(state -> state.getValue(ArtfulMusicBox.CLICKED) ? 15 : 0));;
+            ArtfulMusicBox::    new,BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO).lightLevel(state -> state.getValue(ArtfulMusicBox.CLICKED) ? 15 : 0));;
 
     private static <B extends Block> DeferredBlock<B> registerBlock(String name, Function<BlockBehaviour.Properties, ? extends B> blockFactory, BlockBehaviour.Properties blockProperties) {
         DeferredBlock<B> block = BLOCKS.registerBlock(name, blockFactory, blockProperties);
