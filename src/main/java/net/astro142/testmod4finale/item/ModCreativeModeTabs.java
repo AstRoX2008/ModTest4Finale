@@ -31,6 +31,12 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.ARTFUL_MUSIC_BOX);
 
+                        output.accept(ModItems.EMERALD_PICKAXE);
+                        output.accept(ModItems.EMERALD_SHOVEL);
+                        output.accept(ModItems.EMERALD_HOE);
+                        output.accept(ModItems.EMERALD_AXE);
+                        output.accept(ModItems.EMERALD_SWORD);
+
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModItems.ARTFUL_WAND);
                         output.accept(ModItems.PIZZA);

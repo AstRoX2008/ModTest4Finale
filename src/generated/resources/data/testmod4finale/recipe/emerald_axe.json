@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:emerald",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "## ",
+    "#X ",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod4finale:emerald_axe"
+  }
+}

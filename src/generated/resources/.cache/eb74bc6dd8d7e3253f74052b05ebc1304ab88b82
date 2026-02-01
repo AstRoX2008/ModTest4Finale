@@ -1,5 +1,7 @@
-// 1.21.10	2026-01-27T23:43:31.4226241	Tags for minecraft:block mod id testmod4finale
+// 1.21.10	2026-02-01T16:20:50.4153557	Tags for minecraft:block mod id testmod4finale
 628edae91543c6573b3788f2c5b3a2358f471d6f data/minecraft/tags/block/fences.json
 ec90f6e311e0df889195ddf1fcf40b467cbc73a3 data/minecraft/tags/block/fence_gates.json
 4a681475d298cb3ab8d1f8d37ad04fc3324dfd55 data/minecraft/tags/block/walls.json
+81a6cd0d72f8cb335556130217328ce8c350811a data/testmod4finale/tags/block/incorrect_for_emerald_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/testmod4finale/tags/block/needs_emerald_tool.json
 7de61a4e8bf6099cf8dbda5ed7ffda226ff9b617 data/testmod4finale/tags/block/special_wall_blocks.json

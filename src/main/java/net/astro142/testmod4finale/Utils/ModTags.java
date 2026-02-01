@@ -11,13 +11,15 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> SPECIAL_WALL_BLOCKS = createTag("special_wall_blocks");
 
+        public static final TagKey<Block> NEEDS_EMERALD_TOOL = createTag("needs_emerald_tool");
+        public static final TagKey<Block> INCORRECT_FOR_EMERALD_TOOL = createTag("incorrect_for_emerald_tool");
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TestMod4Finale.MOD_ID, name));
         }
     }
 
     public static class Items {
-
+        public static final TagKey<Item> EMERALD_REPAIRABLE = createTag("emerald_repairable");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TestMod4Finale.MOD_ID, name));

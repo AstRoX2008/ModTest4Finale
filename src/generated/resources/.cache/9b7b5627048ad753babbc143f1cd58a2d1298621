@@ -1,4 +1,4 @@
-// 1.21.10	2026-01-28T23:36:30.147676	Model Definitions - testmod4finale
+// 1.21.10	2026-02-01T16:20:50.399718	Model Definitions - testmod4finale
 9c08f8666e8feea763dec567241f0b48a291a9e8 assets/testmod4finale/blockstates/artful_button.json
 daf166e8feed2a65ce77842761b06b9ad9d9a16e assets/testmod4finale/blockstates/artful_cube.json
 f27ea488150bd273745aef1c1ad203ab7b3930d6 assets/testmod4finale/blockstates/artful_fence.json
@@ -19,6 +19,11 @@ ed8d67f0687b7c6f8c4a4e242b7e2b8a69b29da6 assets/testmod4finale/items/artful_stai
 fb4952b536b46f8c1c41fb3ad067bb93964755ff assets/testmod4finale/items/artful_wall.json
 4e97cdc336574be2a535bb556245a42393565442 assets/testmod4finale/items/artful_wand.json
 60325c874fe657b27f29dc58bd7e52ba3708b88d assets/testmod4finale/items/blackpowder.json
+315592c6f3cead08837dcb8d38da1148469c3e2a assets/testmod4finale/items/emerald_axe.json
+c8e8ec3716a771344f4fe00536fba4cfc03ae5a0 assets/testmod4finale/items/emerald_hoe.json
+9dd71d643de537c0003e5ce85ac1849e203e63e1 assets/testmod4finale/items/emerald_pickaxe.json
+d76c949a99a728ad22a2c6b0b45f84bf5e5bdf07 assets/testmod4finale/items/emerald_shovel.json
+fbe01cc8f69dd2cf61b74a2546705285ac115421 assets/testmod4finale/items/emerald_sword.json
 f29c1bb2a30fa85e1414dbcc99695ff37026fe11 assets/testmod4finale/items/pizza.json
 1f7a54209cbca79f6288199c02f74ed80ca85737 assets/testmod4finale/models/block/artful_button.json
 c3a2e128f3f67eb7f225172945429723744433ea assets/testmod4finale/models/block/artful_button_inventory.json
@@ -46,4 +51,9 @@ d9288742735dcdf38231809c79b9abe4f90058d0 assets/testmod4finale/models/block/artf
 9657de919eaf14c9c8394d33e850c31de2d6a421 assets/testmod4finale/models/block/artful_wall_side_tall.json
 5fddc288623e458840f4eae582a1bca0af29aa15 assets/testmod4finale/models/item/artful_wand.json
 8d69e99121e56d7e66587fef9395c7d602009136 assets/testmod4finale/models/item/blackpowder.json
+6b08be8b50b1b5d232fb221f1eeabfe02e87ee39 assets/testmod4finale/models/item/emerald_axe.json
+9496fcf5fcbd4b66f2db8900a666b01aaf5fa44d assets/testmod4finale/models/item/emerald_hoe.json
+6b67fe9a7e320c965b3d19a5037bac25686169e5 assets/testmod4finale/models/item/emerald_pickaxe.json
+1149f59845bef666365ae8220807fdd1fb9df254 assets/testmod4finale/models/item/emerald_shovel.json
+a18f36130ffb11d0088889081b0a34d8a8e5fb18 assets/testmod4finale/models/item/emerald_sword.json
 0469f026d5c3d7283e6de9dd132141ed039bb8a2 assets/testmod4finale/models/item/pizza.json

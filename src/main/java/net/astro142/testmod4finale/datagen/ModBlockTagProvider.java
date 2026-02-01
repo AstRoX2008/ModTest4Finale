@@ -29,5 +29,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.ARTFUL_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.ARTFUL_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.ARTFUL_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_EMERALD_TOOL);
     }
 }

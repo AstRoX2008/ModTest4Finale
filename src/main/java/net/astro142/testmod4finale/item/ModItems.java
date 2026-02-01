@@ -4,9 +4,7 @@ import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.item.custom.ArtfulWand;
 import net.astro142.testmod4finale.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -30,6 +28,17 @@ public class ModItems {
     public static final DeferredItem<Item> ARTFUL_WAND = ITEMS.registerItem("artful_wand",
             ArtfulWand::new, new Item.Properties().durability(32)
     );
+
+    public static final DeferredItem<Item> EMERALD_SWORD = ITEMS.registerItem("emerald_sword",
+            (properties) -> new Item(properties.sword(ModToolTiers.EMERALD, 5, -2.4f)));
+    public static final DeferredItem<Item> EMERALD_PICKAXE = ITEMS.registerItem("emerald_pickaxe",
+            (properties) -> new Item(properties.pickaxe(ModToolTiers.EMERALD, 1.0F, -2.8f)));
+    public static final DeferredItem<ShovelItem> EMERALD_SHOVEL = ITEMS.registerItem("emerald_shovel",
+            (properties) -> new ShovelItem(ModToolTiers.EMERALD, 1.5F, -3.0f, properties));
+    public static final DeferredItem<AxeItem> EMERALD_AXE = ITEMS.registerItem("emerald_axe",
+            (properties) -> new AxeItem(ModToolTiers.EMERALD, 6.0F, -3.2f, properties));
+    public static final DeferredItem<HoeItem> EMERALD_HOE = ITEMS.registerItem("emerald_hoe",
+            (properties) -> new HoeItem(ModToolTiers.EMERALD, 0F, -3.0f, properties));
 
     public static final DeferredItem<Item> PIZZA = ITEMS.registerItem("pizza",
             Item::new, new Item.Properties().food(ModFoodProperties.PIZZA, ModFoodProperties.PIZZA_EFFECT));

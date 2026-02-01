@@ -61,12 +61,49 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('X', Items.WHITE_DYE)
                 .unlockedBy("has_blackpowder", has(ModItems.BLACKPOWDER)).save(output);
 
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_SWORD.get())
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" X ")
+                .define('#', Items.EMERALD)
+                .define('X', Items.STICK)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_AXE.get())
+                .pattern("## ")
+                .pattern("#X ")
+                .pattern(" X ")
+                .define('#', Items.EMERALD)
+                .define('X', Items.STICK)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_HOE.get())
+                .pattern("## ")
+                .pattern(" X ")
+                .pattern(" X ")
+                .define('#', Items.EMERALD)
+                .define('X', Items.STICK)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_SHOVEL.get())
+                .pattern(" # ")
+                .pattern(" X ")
+                .pattern(" X ")
+                .define('#', Items.EMERALD)
+                .define('X', Items.STICK)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_PICKAXE.get())
+                .pattern("###")
+                .pattern(" X ")
+                .pattern(" X ")
+                .define('#', Items.EMERALD)
+                .define('X', Items.STICK)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+
         shaped(RecipeCategory.MISC, ModItems.BLACKPOWDER.get())
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
                 .define('#', Items.GUNPOWDER)
                 .unlockedBy("has_gunpowder", has(Items.GUNPOWDER)).save(output);
+
 
         oreSmelting(output, TO_ARTFUL_WAND, RecipeCategory.MISC, ModItems.ARTFUL_WAND.get(), 0.25f, 200, "artful_wand");
 
