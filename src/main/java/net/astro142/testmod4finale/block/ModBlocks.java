@@ -4,6 +4,7 @@ import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.block.custom.ArtfulCube;
 import net.astro142.testmod4finale.block.custom.ArtfulMusicBox;
 import net.astro142.testmod4finale.item.ModItems;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;

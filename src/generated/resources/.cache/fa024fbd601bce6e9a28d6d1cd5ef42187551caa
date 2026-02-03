@@ -1,6 +1,7 @@
-// 1.21.10	2026-02-01T16:20:50.4153557	Tags for minecraft:item mod id testmod4finale
+// 1.21.10	2026-02-03T11:31:59.0830107	Tags for minecraft:item mod id testmod4finale
 6c14bfe2fe38a229cd04de406798bd2fc25e80ff data/minecraft/tags/item/axes.json
 bec530a4af3011c9078ca336df6c0e5f3e9b37e8 data/minecraft/tags/item/hoes.json
 bb83581ac9c667a2005b5b6ce920aaf737cd7f6c data/minecraft/tags/item/pickaxes.json
 adbeddf06a36a61bf482318c9453c88f99299927 data/minecraft/tags/item/shovels.json
 fca436901396e7f3b288da5f18533052b3e8a5b6 data/minecraft/tags/item/swords.json
+372cc188c39efa3ab9e0ac56d45afe96fbed942c data/minecraft/tags/item/trimmable_armor.json

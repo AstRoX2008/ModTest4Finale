@@ -37,6 +37,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EMERALD_AXE);
                         output.accept(ModItems.EMERALD_SWORD);
 
+                        output.accept(ModItems.EMERALD_CHESTPLATE);
+                        output.accept(ModItems.EMERALD_BOOTS);
+                        output.accept(ModItems.EMERALD_HELMET);
+                        output.accept(ModItems.EMERALD_LEGGINGS);
+
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModItems.ARTFUL_WAND);
                         output.accept(ModItems.PIZZA);

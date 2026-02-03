@@ -97,6 +97,31 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('X', Items.STICK)
                 .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
 
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .define('#', Items.EMERALD)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Items.EMERALD)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', Items.EMERALD)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+        shaped(RecipeCategory.MISC, ModItems.EMERALD_BOOTS.get())
+                .pattern("   ")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', Items.EMERALD)
+                .unlockedBy("has_emerald", has(Items.EMERALD)).save(output);
+
         shaped(RecipeCategory.MISC, ModItems.BLACKPOWDER.get())
                 .pattern("###")
                 .pattern("###")

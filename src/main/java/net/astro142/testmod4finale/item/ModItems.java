@@ -6,6 +6,7 @@ import net.astro142.testmod4finale.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -39,6 +40,16 @@ public class ModItems {
             (properties) -> new AxeItem(ModToolTiers.EMERALD, 6.0F, -3.2f, properties));
     public static final DeferredItem<HoeItem> EMERALD_HOE = ITEMS.registerItem("emerald_hoe",
             (properties) -> new HoeItem(ModToolTiers.EMERALD, 0F, -3.0f, properties));
+
+    public static final DeferredItem<Item> EMERALD_HELMET = ITEMS.registerItem("emerald_helmet",
+            (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> EMERALD_CHESTPLATE = ITEMS.registerItem("emerald_chestplate",
+            (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> EMERALD_LEGGINGS = ITEMS.registerItem("emerald_leggings",
+            (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> EMERALD_BOOTS = ITEMS.registerItem("emerald_boots",
+            (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
 
     public static final DeferredItem<Item> PIZZA = ITEMS.registerItem("pizza",
             Item::new, new Item.Properties().food(ModFoodProperties.PIZZA, ModFoodProperties.PIZZA_EFFECT));

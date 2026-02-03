@@ -4,6 +4,7 @@ package net.astro142.testmod4finale.datagen;
 import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.block.ModBlocks;
 import net.astro142.testmod4finale.block.custom.ArtfulMusicBox;
+import net.astro142.testmod4finale.item.ModArmorMaterials;
 import net.astro142.testmod4finale.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -40,6 +41,16 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.EMERALD_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+//        itemModels.generateFlatItem(ModItems.EMERALD_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ModItems.EMERALD_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ModItems.EMERALD_HELMET.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ModItems.EMERALD_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateTrimmableItem(ModItems.EMERALD_BOOTS.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_CHESTPLATE.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_HELMET.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_LEGGINGS.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_BOOTS,  false);
 
         /* BLOCKS */
 

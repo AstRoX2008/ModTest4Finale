@@ -30,5 +30,18 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.EMERALD_HOE.get());
         tag(ItemTags.AXES)
                 .add(ModItems.EMERALD_AXE.get());
+//        tag(ItemTags.CHEST_ARMOR)
+//                .add(ModItems.EMERALD_CHESTPLATE.get());
+//        tag(ItemTags.HEAD_ARMOR)
+//                .add(ModItems.EMERALD_HELMET.get());
+//        tag(ItemTags.FOOT_ARMOR)
+//                .add(ModItems.EMERALD_BOOTS.get());
+//        tag(ItemTags.LEG_ARMOR)
+//                .add(ModItems.EMERALD_LEGGINGS.get());
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.EMERALD_LEGGINGS.get())
+                .add(ModItems.EMERALD_BOOTS.get())
+                .add(ModItems.EMERALD_HELMET.get())
+                .add(ModItems.EMERALD_CHESTPLATE.get());
     }
 }
