@@ -3,6 +3,7 @@ package net.astro142.testmod4finale.item;
 import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.item.custom.ArtfulWand;
 import net.astro142.testmod4finale.item.custom.FuelItem;
+import net.astro142.testmod4finale.item.custom.ModArmorItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -42,7 +43,7 @@ public class ModItems {
             (properties) -> new HoeItem(ModToolTiers.EMERALD, 0F, -3.0f, properties));
 
     public static final DeferredItem<Item> EMERALD_HELMET = ITEMS.registerItem("emerald_helmet",
-            (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.HELMET)));
+            (properties) -> new ModArmorItem(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.HELMET)));
     public static final DeferredItem<Item> EMERALD_CHESTPLATE = ITEMS.registerItem("emerald_chestplate",
             (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
     public static final DeferredItem<Item> EMERALD_LEGGINGS = ITEMS.registerItem("emerald_leggings",
