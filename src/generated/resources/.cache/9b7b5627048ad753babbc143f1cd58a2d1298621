@@ -1,4 +1,4 @@
-// 1.21.10	2026-02-03T11:31:59.0780151	Model Definitions - testmod4finale
+// 1.21.10	2026-02-05T00:33:21.8740824	Model Definitions - testmod4finale
 9c08f8666e8feea763dec567241f0b48a291a9e8 assets/testmod4finale/blockstates/artful_button.json
 daf166e8feed2a65ce77842761b06b9ad9d9a16e assets/testmod4finale/blockstates/artful_cube.json
 f27ea488150bd273745aef1c1ad203ab7b3930d6 assets/testmod4finale/blockstates/artful_fence.json
@@ -8,6 +8,7 @@ b456c3d82935d1e838ae8598db4036509315c4b0 assets/testmod4finale/blockstates/artfu
 26474d6fe9b39de1d8a3edb315ffe8b420092b7f assets/testmod4finale/blockstates/artful_slab.json
 d2187547b1b8444e8ffe6bba50417bba4c9150d2 assets/testmod4finale/blockstates/artful_stairs.json
 0ab4d71d50b3cc071dfbd14a27edc157dd7a9f5e assets/testmod4finale/blockstates/artful_wall.json
+763f4ebf0147c6147d0f5df03f49c4cb8fd22a30 assets/testmod4finale/items/amethyst_horse_armor.json
 59585e7a27ea9ea30c5235eaa0f5ac49633de5d2 assets/testmod4finale/items/artful_button.json
 d2ec4f6e5da0b008e54b952e035c59f064ddd383 assets/testmod4finale/items/artful_cube.json
 42fe550120acd5e56a9c945a9c9785b786e0f15e assets/testmod4finale/items/artful_fence.json
@@ -53,6 +54,7 @@ f851be85df179feaebb9f5aa72265ce1349de25a assets/testmod4finale/models/block/artf
 16b83f0c33256cde1dd6653be1da62928b8808a9 assets/testmod4finale/models/block/artful_wall_post.json
 d9288742735dcdf38231809c79b9abe4f90058d0 assets/testmod4finale/models/block/artful_wall_side.json
 9657de919eaf14c9c8394d33e850c31de2d6a421 assets/testmod4finale/models/block/artful_wall_side_tall.json
+15ab09a7054aa48aae9e5b6026c5597ee71fa87f assets/testmod4finale/models/item/amethyst_horse_armor.json
 5fddc288623e458840f4eae582a1bca0af29aa15 assets/testmod4finale/models/item/artful_wand.json
 8d69e99121e56d7e66587fef9395c7d602009136 assets/testmod4finale/models/item/blackpowder.json
 6b08be8b50b1b5d232fb221f1eeabfe02e87ee39 assets/testmod4finale/models/item/emerald_axe.json

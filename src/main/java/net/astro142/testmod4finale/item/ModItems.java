@@ -51,6 +51,8 @@ public class ModItems {
     public static final DeferredItem<Item> EMERALD_BOOTS = ITEMS.registerItem("emerald_boots",
             (properties) -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
+    public static final DeferredItem<Item> AMETHYST_HORSE_ARMOR = ITEMS.registerItem("amethyst_horse_armor",
+            (properties) -> new Item( properties.stacksTo(1).horseArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL)));
 
     public static final DeferredItem<Item> PIZZA = ITEMS.registerItem("pizza",
             Item::new, new Item.Properties().food(ModFoodProperties.PIZZA, ModFoodProperties.PIZZA_EFFECT));

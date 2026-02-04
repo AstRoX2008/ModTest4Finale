@@ -16,7 +16,7 @@ import java.util.EnumMap;
 public class ModArmorMaterials {
     static ResourceKey<? extends Registry<EquipmentAsset>> ROOT_ID = ResourceKey.createRegistryKey(ResourceLocation.withDefaultNamespace("equipment_asset"));
     public static ResourceKey<EquipmentAsset> EMERALD = ResourceKey.create(ROOT_ID, ResourceLocation.fromNamespaceAndPath(TestMod4Finale.MOD_ID, "emerald"));
-
+    public static ResourceKey<EquipmentAsset> AMETHYST = ResourceKey.create(ROOT_ID, ResourceLocation.fromNamespaceAndPath(TestMod4Finale.MOD_ID, "amethyst"));
     public static final ArmorMaterial EMERALD_ARMOR_MATERIAL = new ArmorMaterial(1200,
             Util.make(new EnumMap<>(ArmorType.class), attribute -> {
                 attribute.put(ArmorType.BOOTS, 5);
@@ -26,4 +26,13 @@ public class ModArmorMaterials {
                 attribute.put(ArmorType.BODY, 11);
             }), 16, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2f, 0.1f, ModTags.Items.EMERALD_REPAIRABLE, EMERALD);
+    public static final ArmorMaterial AMETHYST_ARMOR_MATERIAL = new ArmorMaterial(600,
+            Util.make(new EnumMap<>(ArmorType.class), attribute -> {
+                attribute.put(ArmorType.BOOTS, 5);
+                attribute.put(ArmorType.LEGGINGS, 7);
+                attribute.put(ArmorType.CHESTPLATE, 9);
+                attribute.put(ArmorType.HELMET, 5);
+                attribute.put(ArmorType.BODY, 11);
+            }), 16, SoundEvents.ARMOR_EQUIP_DIAMOND,
+            2f, 0.1f, ModTags.Items.AMETHYST_REPAIRABLE, AMETHYST);
 }
