@@ -44,6 +44,12 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.AMETHYST_HORSE_ARMOR);
 
+                        output.accept(ModItems.GNB_MUSIC_DISC_1);
+                        output.accept(ModItems.GNB_MUSIC_DISC_2);
+                        output.accept(ModItems.GNB_MUSIC_DISC_3);
+                        output.accept(ModItems.GNB_MUSIC_DISC_4);
+                        output.accept(ModItems.GNB_MUSIC_DISC_5);
+
                         output.accept(ModItems.BLACKPOWDER);
                         output.accept(ModItems.ARTFUL_WAND);
                         output.accept(ModItems.PIZZA);

@@ -4,6 +4,7 @@ import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.item.custom.ArtfulWand;
 import net.astro142.testmod4finale.item.custom.FuelItem;
 import net.astro142.testmod4finale.item.custom.ModArmorItem;
+import net.astro142.testmod4finale.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -53,6 +54,17 @@ public class ModItems {
 
     public static final DeferredItem<Item> AMETHYST_HORSE_ARMOR = ITEMS.registerItem("amethyst_horse_armor",
             (properties) -> new Item( properties.stacksTo(1).horseArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL)));
+
+    public static final DeferredItem<Item> GNB_MUSIC_DISC_1 = ITEMS.registerItem("gnb_music_disc_1",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.GNB_MUSIC_1_KEY).stacksTo(1)));
+    public static final DeferredItem<Item> GNB_MUSIC_DISC_2 = ITEMS.registerItem("gnb_music_disc_2",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.GNB_MUSIC_2_KEY).stacksTo(1)));
+    public static final DeferredItem<Item> GNB_MUSIC_DISC_3 = ITEMS.registerItem("gnb_music_disc_3",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.GNB_MUSIC_3_KEY).stacksTo(1)));
+    public static final DeferredItem<Item> GNB_MUSIC_DISC_4 = ITEMS.registerItem("gnb_music_disc_4",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.GNB_MUSIC_4_KEY).stacksTo(1)));
+    public static final DeferredItem<Item> GNB_MUSIC_DISC_5 = ITEMS.registerItem("gnb_music_disc_5",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.GNB_MUSIC_5_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> PIZZA = ITEMS.registerItem("pizza",
             Item::new, new Item.Properties().food(ModFoodProperties.PIZZA, ModFoodProperties.PIZZA_EFFECT));

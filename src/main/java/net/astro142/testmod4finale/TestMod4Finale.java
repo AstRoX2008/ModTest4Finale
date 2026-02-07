@@ -4,6 +4,7 @@ import net.astro142.testmod4finale.block.ModBlocks;
 import net.astro142.testmod4finale.component.ModDataComponents;
 import net.astro142.testmod4finale.item.ModCreativeModeTabs;
 import net.astro142.testmod4finale.item.ModItems;
+import net.astro142.testmod4finale.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -44,6 +45,7 @@ public class TestMod4Finale {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
+        ModSounds.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

@@ -31,12 +31,5 @@ import java.util.Set;
 
 @EventBusSubscriber(modid = TestMod4Finale.MOD_ID)
 public class ModEvents {
-    private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
 
-    // Done with the help of https://github.com/CoFH/CoFHCore/blob/1.19.x/src/main/java/cofh/core/event/AreaEffectEvents.java
-    // Don't be a jerk License
-    @SubscribeEvent
-    public static void onWandUsage(BlockEvent.BreakEvent event) {
-
-    }
 }

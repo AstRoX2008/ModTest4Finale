@@ -1,0 +1,48 @@
+{
+  "wand_sound": {
+    "subtitle": "sounds.testmod4finale.wand_sound",
+    "sounds": [
+      "testmod4finale:wand_sound"
+    ]
+  },
+  "gnb_music_1": {
+    "sounds": [
+      {
+        "name": "testmod4finale:gnb_music_1",
+        "stream": true
+      }
+    ]
+  },
+  "gnb_music_2": {
+    "sounds": [
+      {
+        "name": "testmod4finale:gnb_music_2",
+        "stream": true
+      }
+    ]
+  },
+  "gnb_music_3": {
+    "sounds": [
+      {
+        "name": "testmod4finale:gnb_music_3",
+        "stream": true
+      }
+    ]
+  },
+  "gnb_music_4": {
+    "sounds": [
+      {
+        "name": "testmod4finale:gnb_music_4",
+        "stream": true
+      }
+    ]
+  },
+  "gnb_music_5": {
+    "sounds": [
+      {
+        "name": "testmod4finale:gnb_music_5",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.testmod4finale.gnb_music_disc_5.desc"
+  },
+  "length_in_seconds": 427.0,
+  "sound_event": "testmod4finale:gnb_music_5"
+}

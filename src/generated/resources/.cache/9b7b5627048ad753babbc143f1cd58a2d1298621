@@ -1,4 +1,4 @@
-// 1.21.10	2026-02-07T13:16:19.7103741	Model Definitions - testmod4finale
+// 1.21.10	2026-02-07T14:59:20.2675653	Model Definitions - testmod4finale
 9c08f8666e8feea763dec567241f0b48a291a9e8 assets/testmod4finale/blockstates/artful_button.json
 daf166e8feed2a65ce77842761b06b9ad9d9a16e assets/testmod4finale/blockstates/artful_cube.json
 f27ea488150bd273745aef1c1ad203ab7b3930d6 assets/testmod4finale/blockstates/artful_fence.json
@@ -29,6 +29,11 @@ c8e8ec3716a771344f4fe00536fba4cfc03ae5a0 assets/testmod4finale/items/emerald_hoe
 9dd71d643de537c0003e5ce85ac1849e203e63e1 assets/testmod4finale/items/emerald_pickaxe.json
 d76c949a99a728ad22a2c6b0b45f84bf5e5bdf07 assets/testmod4finale/items/emerald_shovel.json
 fbe01cc8f69dd2cf61b74a2546705285ac115421 assets/testmod4finale/items/emerald_sword.json
+f8533918600e2df7348dbbb94a6f11f7ebc84fff assets/testmod4finale/items/gnb_music_disc_1.json
+ea1a3a487b906cd71c8f1b12714d36c50a66da45 assets/testmod4finale/items/gnb_music_disc_2.json
+ab734d3ff55b6861b9e972d30b1bc199a347857d assets/testmod4finale/items/gnb_music_disc_3.json
+1d4e47f0a9b167760289f1ac6efc156f1b1cae89 assets/testmod4finale/items/gnb_music_disc_4.json
+0e4de8c0e05602d668655a700b50bce38b5d8ac1 assets/testmod4finale/items/gnb_music_disc_5.json
 f29c1bb2a30fa85e1414dbcc99695ff37026fe11 assets/testmod4finale/items/pizza.json
 1f7a54209cbca79f6288199c02f74ed80ca85737 assets/testmod4finale/models/block/artful_button.json
 c3a2e128f3f67eb7f225172945429723744433ea assets/testmod4finale/models/block/artful_button_inventory.json
@@ -111,4 +116,9 @@ f7d1cc6e44216618b686ba13764e75a1b45a842e assets/testmod4finale/models/item/emera
 6b67fe9a7e320c965b3d19a5037bac25686169e5 assets/testmod4finale/models/item/emerald_pickaxe.json
 1149f59845bef666365ae8220807fdd1fb9df254 assets/testmod4finale/models/item/emerald_shovel.json
 a18f36130ffb11d0088889081b0a34d8a8e5fb18 assets/testmod4finale/models/item/emerald_sword.json
+c8c16338505c7d9c6414e432eff89baff323c21c assets/testmod4finale/models/item/gnb_music_disc_1.json
+9f05437751cc751916deed74865d9f3e2f1c40d3 assets/testmod4finale/models/item/gnb_music_disc_2.json
+0a3abddd3d90983a95ea36cc6873892de198f01e assets/testmod4finale/models/item/gnb_music_disc_3.json
+422b36730654c063977189808ea884b575e9057e assets/testmod4finale/models/item/gnb_music_disc_4.json
+3817342ddcda9ac3a8fe2e195724e9a778660c97 assets/testmod4finale/models/item/gnb_music_disc_5.json
 0469f026d5c3d7283e6de9dd132141ed039bb8a2 assets/testmod4finale/models/item/pizza.json

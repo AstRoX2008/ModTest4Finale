@@ -3,6 +3,7 @@ package net.astro142.testmod4finale.item.custom;
 import com.mojang.logging.LogUtils;
 import net.astro142.testmod4finale.Utils.ModTags;
 import net.astro142.testmod4finale.component.ModDataComponents;
+import net.astro142.testmod4finale.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.network.chat.Component;
@@ -61,7 +62,7 @@ public class ArtfulWand extends Item {
 
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-                level.playSound(null, context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS);
+                level.playSound(null, context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), ModSounds.WAND_SOUND.get(), SoundSource.BLOCKS);
 
                 context.getItemInHand().set(ModDataComponents.JUST_USED, context.getClickedPos());
 

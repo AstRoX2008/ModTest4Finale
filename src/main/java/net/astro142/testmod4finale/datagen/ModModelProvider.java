@@ -36,6 +36,12 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.BLACKPOWDER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PIZZA.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ModItems.GNB_MUSIC_DISC_1.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.GNB_MUSIC_DISC_2.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.GNB_MUSIC_DISC_3.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.GNB_MUSIC_DISC_4.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.GNB_MUSIC_DISC_5.get(), ModelTemplates.FLAT_ITEM);
+
         itemModels.generateFlatItem(ModItems.EMERALD_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
