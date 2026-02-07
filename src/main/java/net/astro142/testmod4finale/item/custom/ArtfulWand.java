@@ -61,8 +61,10 @@ public class ArtfulWand extends Item {
 
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
                 level.playSound(null, context.getClickedPos().offset(newoff.getX(),newoff.getY(),newoff.getZ()), SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.JUST_USED, context.getClickedPos());
+
             }
 
         return InteractionResult.SUCCESS;
@@ -72,9 +74,6 @@ public class ArtfulWand extends Item {
     public void appendHoverText(ItemStack pStack, TooltipContext pContext, TooltipDisplay tooltipDisplay, Consumer<Component> components, TooltipFlag tooltipFlag) {
 
         components.accept(Component.translatable("tooltip.testmod4finale.artful_wand.tooltip"));
-        if(pStack.get(ModDataComponents.COORDINATES) != null) {
-            components.accept(Component.literal("Last wall summoned at " + pStack.get(ModDataComponents.COORDINATES)));
-        }
         super.appendHoverText(pStack, pContext, tooltipDisplay, components, tooltipFlag);
     }
 

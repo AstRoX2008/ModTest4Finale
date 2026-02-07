@@ -4,6 +4,7 @@ package net.astro142.testmod4finale.datagen;
 import net.astro142.testmod4finale.TestMod4Finale;
 import net.astro142.testmod4finale.block.ModBlocks;
 import net.astro142.testmod4finale.block.custom.ArtfulMusicBox;
+import net.astro142.testmod4finale.component.ModDataComponents;
 import net.astro142.testmod4finale.item.ModArmorMaterials;
 import net.astro142.testmod4finale.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -34,7 +35,6 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.BLACKPOWDER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PIZZA.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.ARTFUL_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateFlatItem(ModItems.EMERALD_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -52,6 +52,13 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateTrimmableItem(ModItems.EMERALD_HELMET.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModels.generateTrimmableItem(ModItems.EMERALD_LEGGINGS.get(), ModArmorMaterials.EMERALD, ItemModelGenerators.TRIM_PREFIX_BOOTS,  false);
         itemModels.generateFlatItem(ModItems.AMETHYST_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
+
+        ItemModel.Unbaked unbakedChisel = ItemModelUtils.plainModel(itemModels.createFlatItemModel(ModItems.ARTFUL_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM));
+        ItemModel.Unbaked unbakedUsedChisel = ItemModelUtils.plainModel(itemModels.createFlatItemModel(ModItems.ARTFUL_WAND.get(), "_used", ModelTemplates.FLAT_HANDHELD_ITEM));
+        itemModels.itemModelOutput.register(ModItems.ARTFUL_WAND.get(),
+                new ClientItem(new ConditionalItemModel.Unbaked(new HasComponent(ModDataComponents.JUST_USED.get(), false),
+                        unbakedUsedChisel, unbakedChisel),
+                        new ClientItem.Properties(false, false)));
         /* BLOCKS */
 
         blockModels.family(ModBlocks.ARTFUL_CUBE.get())

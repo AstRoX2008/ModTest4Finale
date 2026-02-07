@@ -1,6 +1,16 @@
 {
+  "hand_animation_on_swap": false,
   "model": {
-    "type": "minecraft:model",
-    "model": "testmod4finale:item/artful_wand"
+    "type": "minecraft:condition",
+    "component": "testmod4finale:just_used",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "testmod4finale:item/artful_wand"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "testmod4finale:item/artful_wand_used"
+    },
+    "property": "minecraft:has_component"
   }
 }
