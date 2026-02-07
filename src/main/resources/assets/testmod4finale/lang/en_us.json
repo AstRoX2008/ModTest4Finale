@@ -31,15 +31,15 @@
   "creativetab.testmod4finale.gnb_stuff": "GNB Stuff",
 
   "item.testmod4finale.gnb_music_disc_1": "1812 Overtune",
-  "item.testmod4finale.gnb_music_disc_1.desc": "Catacombs de Paris",
+  "item.testmod4finale.gnb_music_disc_1.desc": "Catacombs de Paris - 1812 Overture",
   "item.testmod4finale.gnb_music_disc_2": "Four Seasons (Winter) 1st Movement",
-  "item.testmod4finale.gnb_music_disc_2.desc": "Vardøhus Fortress",
+  "item.testmod4finale.gnb_music_disc_2.desc": "Vardøhus Fortress - Four Seasons (Winter) 1st Movement",
   "item.testmod4finale.gnb_music_disc_3": "Ode To Joy",
-  "item.testmod4finale.gnb_music_disc_3.desc": "Kaub",
+  "item.testmod4finale.gnb_music_disc_3.desc": "Kaub - Ode To Joy",
   "item.testmod4finale.gnb_music_disc_4": "Four Seasons (Summer) 1st & 3rd Movement",
-  "item.testmod4finale.gnb_music_disc_4.desc": "Roscoff",
+  "item.testmod4finale.gnb_music_disc_4.desc": "Roscoff - Four Seasons (Summer) 1st & 3rd Movement",
   "item.testmod4finale.gnb_music_disc_5": "Egmont Overture",
-  "item.testmod4finale.gnb_music_disc_5.desc": "Westminster",
+  "item.testmod4finale.gnb_music_disc_5.desc": "Westminster - Egmont Overture",
 
   "tooltip.testmod4finale.blackpowder.tooltip": "Careful! It's explosive.",
   "tooltip.testmod4finale.artful_wand.tooltip": "Spawns a white wall just like the real Artful."
