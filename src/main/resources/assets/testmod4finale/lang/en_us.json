@@ -41,6 +41,8 @@
   "item.testmod4finale.gnb_music_disc_5": "Egmont Overture",
   "item.testmod4finale.gnb_music_disc_5.desc": "Westminster - Egmont Overture",
 
+  "effect.testmod4finale.adrenaline": "Adrenaline",
+
   "tooltip.testmod4finale.blackpowder.tooltip": "Careful! It's explosive.",
   "tooltip.testmod4finale.artful_wand.tooltip": "Spawns a white wall just like the real Artful."
 }

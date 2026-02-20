@@ -2,6 +2,7 @@ package net.astro142.testmod4finale;
 
 import net.astro142.testmod4finale.block.ModBlocks;
 import net.astro142.testmod4finale.component.ModDataComponents;
+import net.astro142.testmod4finale.effect.ModEffects;
 import net.astro142.testmod4finale.item.ModCreativeModeTabs;
 import net.astro142.testmod4finale.item.ModItems;
 import net.astro142.testmod4finale.sound.ModSounds;
@@ -46,6 +47,7 @@ public class TestMod4Finale {
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
